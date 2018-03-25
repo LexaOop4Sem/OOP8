@@ -24,26 +24,58 @@
    </property>
    <layout class="QGridLayout" name="gridLayout_2">
     <item row="5" column="2">
-     <widget class="QLineEdit" name="lineEdit_2"/>
+     <widget class="QLineEdit" name="age">
+      <property name="text">
+       <string>25</string>
+      </property>
+     </widget>
     </item>
     <item row="3" column="2">
-     <widget class="QLineEdit" name="lineEdit"/>
+     <widget class="QLineEdit" name="owner">
+      <property name="text">
+       <string>Иванов</string>
+      </property>
+     </widget>
     </item>
     <item row="9" column="2">
-     <widget class="QLineEdit" name="lineEdit_3"/>
+     <widget class="QLineEdit" name="residents">
+      <property name="text">
+       <string>56</string>
+      </property>
+     </widget>
     </item>
     <item row="12" column="2">
-     <widget class="QLabel" name="label_8">
+     <widget class="QLabel" name="cost">
       <property name="text">
        <string>0</string>
       </property>
      </widget>
     </item>
     <item row="11" column="2">
-     <widget class="QComboBox" name="comboBox_2"/>
+     <widget class="QComboBox" name="period">
+      <item>
+       <property name="text">
+        <string>6 месяцев</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>1 год</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>18 месяцев</string>
+       </property>
+      </item>
+     </widget>
     </item>
     <item row="10" column="2">
-     <widget class="QLineEdit" name="lineEdit_4"/>
+     <widget class="QLineEdit" name="area">
+      <property name="text">
+       <string>170</string>
+      </property>
+     </widget>
     </item>
     <item row="9" column="0">
      <widget class="QLabel" name="label_4">
@@ -95,19 +127,40 @@
      </widget>
     </item>
     <item row="6" column="2">
-     <widget class="QComboBox" name="comboBox"/>
+     <widget class="QComboBox" name="estateType">
+      <item>
+       <property name="text">
+        <string>Квартира эконом-класса</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Элитная квартира</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Таун-хаус</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Коттедж</string>
+       </property>
+      </item>
+     </widget>
     </item>
     <item row="13" column="2">
      <layout class="QGridLayout" name="gridLayout_4">
       <item row="0" column="0">
-       <widget class="QPushButton" name="pushButton_2">
+       <widget class="QPushButton" name="btnCalc">
         <property name="text">
          <string>Рассчитать</string>
         </property>
        </widget>
       </item>
       <item row="0" column="1">
-       <widget class="QPushButton" name="pushButton">
+       <widget class="QPushButton" name="btnUndo">
         <property name="text">
          <string>Последний запрос</string>
         </property>
