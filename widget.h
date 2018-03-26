@@ -2,6 +2,7 @@
 #define WIDGET_H
 
 #include <QWidget>
+ #include "ui_widget.h"
 
 namespace Ui {
 class Widget;
@@ -15,7 +16,7 @@ public:
     explicit Widget(QWidget *parent = 0);
     ~Widget();
 
-private:
+
     Ui::Widget *ui;
 };
 

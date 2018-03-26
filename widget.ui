@@ -33,7 +33,7 @@
     <item row="3" column="2">
      <widget class="QLineEdit" name="owner">
       <property name="text">
-       <string>Иванов</string>
+       <string>ivanov</string>
       </property>
      </widget>
     </item>
@@ -152,17 +152,17 @@
     </item>
     <item row="13" column="2">
      <layout class="QGridLayout" name="gridLayout_4">
-      <item row="0" column="0">
-       <widget class="QPushButton" name="btnCalc">
-        <property name="text">
-         <string>Рассчитать</string>
-        </property>
-       </widget>
-      </item>
       <item row="0" column="1">
        <widget class="QPushButton" name="btnUndo">
         <property name="text">
          <string>Последний запрос</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0">
+       <widget class="QPushButton" name="btnCalc">
+        <property name="text">
+         <string>Рассчитать</string>
         </property>
        </widget>
       </item>

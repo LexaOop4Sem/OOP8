@@ -1,9 +1,11 @@
 #ifndef ESTATE_H
 #define ESTATE_H
 
+ #include "ui_widget.h"
 #include <QObject>
 
-class Estate : public QObject {
+
+class Estate : public QObject{
     Q_OBJECT
 public:
     enum EstateType {
@@ -13,6 +15,7 @@ public:
         COTTAGE     };
     explicit Estate(QObject *parent = nullptr);
     EstateType getType() const;
+    void SetType();
 
 private:
     int age;
@@ -21,6 +24,7 @@ private:
     int months;
     EstateType type;
     QString owner;
+  //  Ui::Est ui;
 };
 #endif
 // ESTATE_H
