@@ -33,7 +33,7 @@
     <item row="3" column="2">
      <widget class="QLineEdit" name="owner">
       <property name="text">
-       <string>ivanov</string>
+       <string>Иванов</string>
       </property>
      </widget>
     </item>

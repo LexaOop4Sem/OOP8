@@ -3,10 +3,6 @@
 #include <iostream>
 #include <QString>
 #include <QTextStream>
-#include <QtDebug>
-#include <io.h>
-#include <fcntl.h>
-#include <QTextCodec>
 
 using namespace std;
 
