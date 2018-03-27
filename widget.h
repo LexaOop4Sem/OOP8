@@ -19,8 +19,10 @@ public:
 
     Ui::Widget *ui;
 
-    public:
 
+
+private slots:
+    void on_btnCalc_clicked();
 };
 
 #endif // WIDGET_H

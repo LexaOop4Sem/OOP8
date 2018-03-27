@@ -1,6 +1,12 @@
 #include "estate.h"
-
-Estate::Estate(QObject *parent) : QObject(parent)
+#include <QString>
+ #include "ui_widget.h"
+#include <iostream>
+#include <QWidget>
+#include "widget.h"
+Estate::Estate(Ui::Widget *ui)
 {
- //ui.setupUi(this);
+      QString str="алексеев";
+      ui->owner->setText(str);
+      std::cout<<"rrr";
 }

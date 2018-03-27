@@ -4,28 +4,36 @@
 #include <iostream>
 #include <QString>
 #include <QTextStream>
+ #include "ui_widget.h"
 
 using namespace std;
 
 int main(int argc, char *argv[])
 {
-Estate est;
-est.age=3;
+
+
     QApplication a(argc, argv);
-       Widget w;
+
+       Widget *w= new Widget;
+
+
+       //Estate *est= new Estate();
+
        QTextStream cout (stdout);
        setlocale(LC_ALL, "Russian");
+    //   owner= w->ui->owner->text();
+     //  QString str="алексеев";
+     //  w->ui->owner->setText(str);
 
 
-        QString str = w.ui->owner->text();
-cout<<str;
+
+
  cout<<"before";
 
-   w.show();
- QObject::connect(w.ui->btnCalc,SIGNAL(clicked(bool)),&a,SLOT(quit()));
 
 
 
+ w->show();
 
 
        cout<<"after";

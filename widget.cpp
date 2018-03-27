@@ -17,3 +17,8 @@ Widget::~Widget()
 }
 
 
+
+void Widget::on_btnCalc_clicked()
+{
+    Estate *est= new Estate(ui);
+}
