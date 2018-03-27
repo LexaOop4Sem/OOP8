@@ -6,7 +6,7 @@
 #include <QWidget>
 
 
-class Estate : public QObject,public Ui::Widget{
+class Estate : public QObject{
     Q_OBJECT
 public:
     enum EstateType {

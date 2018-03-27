@@ -4,6 +4,7 @@
 #include <iostream>
 #include <QString>
 #include <QTextStream>
+#include <QTextCodec>
  #include "ui_widget.h"
 
 using namespace std;
@@ -28,7 +29,7 @@ int main(int argc, char *argv[])
 
 
 
- cout<<"before";
+
 
 
 
@@ -36,7 +37,6 @@ int main(int argc, char *argv[])
  w->show();
 
 
-       cout<<"after";
 
 
 //btnCalc
