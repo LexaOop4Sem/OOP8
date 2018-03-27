@@ -4,12 +4,12 @@
 #include <QWidget>
  #include "ui_widget.h"
 
+
 namespace Ui {
 class Widget;
 }
 
-class Widget : public QWidget
-{
+class Widget : public QWidget{
     Q_OBJECT
 
 public:
@@ -18,6 +18,9 @@ public:
 
 
     Ui::Widget *ui;
+
+    public:
+
 };
 
 #endif // WIDGET_H

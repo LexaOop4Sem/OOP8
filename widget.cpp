@@ -1,5 +1,8 @@
 #include "widget.h"
 #include "ui_widget.h"
+#include <iostream>
+#include"estate.h"
+
 
 Widget::Widget(QWidget *parent) :
     QWidget(parent),
@@ -12,3 +15,5 @@ Widget::~Widget()
 {
     delete ui;
 }
+
+

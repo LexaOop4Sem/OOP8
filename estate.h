@@ -3,7 +3,9 @@
 
  #include "ui_widget.h"
 #include <QObject>
-
+namespace Ui {
+class Estate;
+}
 
 class Estate : public QObject{
     Q_OBJECT
@@ -16,15 +18,17 @@ public:
     explicit Estate(QObject *parent = nullptr);
     EstateType getType() const;
     void SetType();
-
-private:
     int age;
+  Ui::Widget *ui;
+private:
+
     int area;
     int residents;
     int months;
     EstateType type;
     QString owner;
   //  Ui::Est ui;
+
 };
 #endif
 // ESTATE_H
