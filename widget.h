@@ -23,7 +23,7 @@ public:
     Ui::Widget *ui;
     Estate *est;
     //Widget(){est=Estate(ui);};
-   // States st;
+    States *st;
    // Widget(){st=States();};
 
 //B(int m, int n) : test2(m, n) {}

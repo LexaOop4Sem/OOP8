@@ -4,7 +4,7 @@
 States::States(QObject* parent)
     : QObject(parent)
 {
-    actualData = nullptr;
+   // actualData = nullptr;
 }
 
 States::~States()

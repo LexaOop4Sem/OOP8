@@ -11,6 +11,7 @@ Widget::Widget(QWidget *parent) :
 {
     ui->setupUi(this);
 est=new Estate();
+st= new States();
 
 }
 
@@ -25,14 +26,14 @@ void Widget::on_btnCalc_clicked()
 {
     std::cout<<"clic";
 est->Set(ui);
-//  st = new States();
-//    st->add(est);
+
+  st->add(est);
 
 
 }
 
 void Widget::on_btnUndo_clicked()
 {
- // bool b=st->hasStates();
-  //std::cout<<b;
+  bool b=st->hasStates();
+  std::cout<<b;
 }

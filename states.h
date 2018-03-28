@@ -20,7 +20,7 @@ public : explicit States(QObject* parent = nullptr);
 private:
     QList<Estate*> array;
 
-    Estate* actualData;
+    Estate* actualData=NULL;
 };
 
 #endif

@@ -52,5 +52,5 @@ void Estate::Set(Ui::Widget *ui){
 QString s = QString::number(pay);
     ui->cost->setText(s);
 
-    cout<<"222";
+
 }
