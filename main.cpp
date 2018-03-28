@@ -17,21 +17,8 @@ int main(int argc, char *argv[])
 
        Widget *w= new Widget;
 
-
-       //Estate *est= new Estate();
-
        QTextStream cout (stdout);
        setlocale(LC_ALL, "Russian");
-    //   owner= w->ui->owner->text();
-     //  QString str="алексеев";
-     //  w->ui->owner->setText(str);
-
-
-
-
-
-
-
 
 
  w->show();

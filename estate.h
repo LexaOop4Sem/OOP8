@@ -6,6 +6,7 @@
 #include <QWidget>
 
 
+
 class Estate : public QObject{
     Q_OBJECT
 public:
@@ -14,7 +15,8 @@ public:
         LUXURIOUS,
         TOWN_HOUSE,
         COTTAGE     };
-    Estate(Ui::Widget *ui);
+    Estate();
+    void Set(Ui::Widget *ui);
 
 private:
     int age;
