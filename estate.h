@@ -16,9 +16,6 @@ public:
         COTTAGE     };
     Estate(Ui::Widget *ui);
 
-
-
- //void Set(Widget *w);
 private:
     int age;
     int area;

@@ -23,16 +23,18 @@ Estate::Estate(Ui::Widget *ui)
     setlocale(LC_ALL, "Russian");
 
 
-     owner=ui->owner->text();
-      age=ui->age->text().toInt();
-      residents=ui->residents->text().toInt();
-area=ui->residents->text().toInt();
-std::cout<<area<<std::endl;
-months=ui->period->currentIndex();
-if(months==0)months=6;
-else if(months==1)months=12;
-else months=18;
-cout<<months;
-area=ui->residents->text().toInt();
+    owner=ui->owner->text();
+    age=ui->age->text().toInt();
+    residents=ui->residents->text().toInt();
+    area=ui->residents->text().toInt();
+    months=ui->period->currentIndex();
+        if(months==0)months=6;
+        else if(months==1)months=12;
+        else months=18;
 
+
+    int idx=ui->estateType->currentIndex();
+     type=static_cast<EstateType>(idx);
+
+    cout<<type;
 }

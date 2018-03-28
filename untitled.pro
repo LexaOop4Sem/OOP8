@@ -28,11 +28,13 @@ GONFIG +=\
 SOURCES += \
         main.cpp \
         widget.cpp \
-    estate.cpp
+    estate.cpp \
+    states.cpp
 
 HEADERS += \
         widget.h \
-    estate.h
+    estate.h \
+    states.h
 
 FORMS += \
         widget.ui
