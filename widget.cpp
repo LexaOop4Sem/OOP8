@@ -3,6 +3,7 @@
 #include <iostream>
 #include"estate.h"
 #include "states.h"
+#include <QTextStream>
 
 class Estate;
 Widget::Widget(QWidget *parent) :
@@ -34,6 +35,8 @@ est->Set(ui);
 
 void Widget::on_btnUndo_clicked()
 {
+    QTextStream cout (stdout);
   bool b=st->hasStates();
-  std::cout<<b;
+  cout<<b;
+
 }
