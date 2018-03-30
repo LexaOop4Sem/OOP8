@@ -100,7 +100,7 @@ void Estate::TXT(Ui::Widget *ui){
            switch (type) {
            case ECONOM:
 
-               ui->estateType->setCurrentIndex(0);
+               ui->period->setCurrentIndex(0);
 ;
                break;
            case LUXURIOUS:
@@ -117,5 +117,21 @@ void Estate::TXT(Ui::Widget *ui){
                break;
       }
 
+           switch (months) {
+           case 6:
 
+               ui->period->setCurrentIndex(0);
+;
+               break;
+           case 12:
+
+              ui->period->setCurrentIndex(1);
+               break;
+
+           case 18:
+
+               ui->period->setCurrentIndex(2);
+               break;
+
+      }
 }
