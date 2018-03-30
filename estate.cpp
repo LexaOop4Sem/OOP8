@@ -99,21 +99,21 @@ void Estate::TXT(Ui::Widget *ui){
            cout<<"type"<<type<<endl;
            switch (type) {
            case ECONOM:
-               s="Квартира эконом-класса";
+
                ui->estateType->setCurrentIndex(0);
 ;
                break;
            case LUXURIOUS:
-               s="Элитная квартира";
-              // ui->estateType->Text=s;
+
+              ui->estateType->setCurrentIndex(1);
                break;
            case TOWN_HOUSE:
-               s="Таун-хаус";
-               ui->estateType->setEditText(s);
+
+               ui->estateType->setCurrentIndex(2);
                break;
            case COTTAGE:
-               s="Коттедж";
-               ui->estateType->setEditText(s);
+
+               ui->estateType->setCurrentIndex(3);
                break;
       }
 
