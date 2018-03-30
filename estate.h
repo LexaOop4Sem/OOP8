@@ -17,12 +17,15 @@ public:
         COTTAGE     };
     Estate();
     void Set(Ui::Widget *ui);
-
+    void SetCost(Ui::Widget *ui,int &cost);
+    EstateType getType();
+     int getresidents();
 private:
     int age;
     int area;
     int residents;
     int months;
+    int costs;
     EstateType type;
     QString owner;
 

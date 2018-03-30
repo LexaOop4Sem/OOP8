@@ -29,12 +29,22 @@ SOURCES += \
         main.cpp \
         widget.cpp \
     estate.cpp \
-    states.cpp
+    states.cpp \
+    calculationfacade.cpp \
+    apartmentcalc.cpp \
+    luxuriousapartmentcalc.cpp \
+    townhousecalc.cpp \
+    cottagecalc.cpp
 
 HEADERS += \
         widget.h \
     estate.h \
-    states.h
+    states.h \
+    calculationfacade.h \
+    apartmentcalc.h \
+    luxuriousapartmentcalc.h \
+    townhousecalc.h \
+    cottagecalc.h
 
 FORMS += \
         widget.ui

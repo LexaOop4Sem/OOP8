@@ -5,6 +5,7 @@
 #include "states.h"
 #include <QTextStream>
 
+
 class Estate;
 Widget::Widget(QWidget *parent) :
     QWidget(parent),
@@ -26,8 +27,11 @@ Widget::~Widget()
 void Widget::on_btnCalc_clicked()
 {
     std::cout<<"clic";
+
 est->Set(ui);
 
+int cost=CalculationFacade::getCost(est);
+est->SetCost(ui,cost);
   st->add(est);
 
 

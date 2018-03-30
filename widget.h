@@ -5,6 +5,7 @@
 #include "ui_widget.h"
 #include "states.h"
 #include "estate.h"
+#include "calculationfacade.h"
 
 class Estate;
 class States;
