@@ -21,6 +21,7 @@ delete actualData;
  array.clear();
 }
 bool States::hasStates(){
+    this->undo();
     if (actualData==nullptr){
         return 0;
     }
@@ -41,21 +42,24 @@ void States::undo(){
 
 Estate* States::getActualData(){
 
-    bool check=hasStates();
-    if (check==0) return nullptr;
-    else
-    {
-        Estate* Data=actualData;
+   Estate* Data=actualData;
          this->undo();
         return Data;
 
-    }
+
 }
 void States::add(Estate* value){
 QTextStream cout (stdout);
-    array.append(value);
-     bool empty=array.isEmpty();
-     cout<<"arrayisempty"<<endl<<empty;
 
-     this->undo();
+if (preactualData!=nullptr){
+
+array.append(preactualData);
+}
+   preactualData=value;
+   // array.append(value);
+   // array.size();
+   //  bool empty=array.isEmpty();
+    // cout<<"arrayisempty"<<endl<<empty;
+
+    // this->undo();
 }

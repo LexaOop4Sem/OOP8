@@ -26,13 +26,13 @@ Widget::~Widget()
 
 void Widget::on_btnCalc_clicked()
 {
-
-est->Set(ui);
-
-int cost=CalculationFacade::getCost(est);
-est->SetCost(ui,cost);
  Estate *newest= new Estate();
- newest=est;
+newest->Set(ui);
+
+int cost=CalculationFacade::getCost(newest);
+newest->SetCost(ui,cost);
+
+ //newest=est;
   st->add(newest);
 
 

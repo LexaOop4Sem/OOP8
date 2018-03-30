@@ -96,6 +96,7 @@ void Estate::TXT(Ui::Widget *ui){
           s = QString::number(costs);
          // ui->estateType->setText(s);
            ui->cost->setText(s);
+           cout<<"type"<<type<<endl;
            switch (type) {
            case ECONOM:
                s="Квартира эконом-класса";

@@ -22,6 +22,7 @@ private:
     QList<Estate*> array;
 
     Estate* actualData=nullptr;
+    Estate* preactualData=nullptr;
 };
 
 #endif
