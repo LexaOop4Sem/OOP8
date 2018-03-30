@@ -100,11 +100,12 @@ void Estate::TXT(Ui::Widget *ui){
            switch (type) {
            case ECONOM:
                s="Квартира эконом-класса";
-               ui->estateType->setEditText(s);
+               ui->estateType->setCurrentIndex(0);
+;
                break;
            case LUXURIOUS:
                s="Элитная квартира";
-               ui->estateType->setEditText(s);
+              // ui->estateType->Text=s;
                break;
            case TOWN_HOUSE:
                s="Таун-хаус";
