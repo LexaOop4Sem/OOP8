@@ -13,7 +13,7 @@ Estate::Estate()
     QTextStream cout (stdout);
     setlocale(LC_ALL, "Russian");
 
-cout<<"111";
+cout<<"est const";
 }
 void Estate::Set(Ui::Widget *ui){
 
@@ -26,7 +26,8 @@ void Estate::Set(Ui::Widget *ui){
     int idx=ui->estateType->currentIndex();
     type=static_cast<EstateType>(idx);
     residents=ui->residents->text().toInt();
-    area=ui->residents->text().toInt();
+     area=ui->area->text().toInt();
+    residents=ui->residents->text().toInt();
     months=ui->period->currentIndex();
         if(months==0)months=6;
         else if(months==1)months=12;
@@ -61,3 +62,58 @@ void Estate::SetCost(Ui::Widget *ui,int &cost){
 
 }
 
+
+
+
+//int age;
+//int area;
+//int residents;
+//int months;
+//int costs;
+//EstateType type;
+//QString owner;
+
+
+void Estate::TXT(Ui::Widget *ui){
+
+//     QString ss = "www";
+//     ui->owner->setText(ss);
+
+    QTextStream cout (stdout);
+    cout<<endl<<this->residents<<endl;
+
+    ui->owner->setText(this->owner);
+         QString s = QString::number(age);
+         ui->age->setText(s);
+
+        // ui->estateType->setEditText(s);
+
+         s = QString::number(residents);
+         ui->residents->setText(s);
+          s = QString::number(area);
+         ui->area->setText(s);
+
+          s = QString::number(costs);
+         // ui->estateType->setText(s);
+           ui->cost->setText(s);
+           switch (type) {
+           case ECONOM:
+               s="Квартира эконом-класса";
+               ui->estateType->setEditText(s);
+               break;
+           case LUXURIOUS:
+               s="Элитная квартира";
+               ui->estateType->setEditText(s);
+               break;
+           case TOWN_HOUSE:
+               s="Таун-хаус";
+               ui->estateType->setEditText(s);
+               break;
+           case COTTAGE:
+               s="Коттедж";
+               ui->estateType->setEditText(s);
+               break;
+      }
+
+
+}

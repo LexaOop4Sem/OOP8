@@ -20,6 +20,7 @@ public:
     void SetCost(Ui::Widget *ui,int &cost);
     EstateType getType();
      int getresidents();
+     void TXT(Ui::Widget *ui);
 private:
     int age;
     int area;

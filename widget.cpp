@@ -26,13 +26,14 @@ Widget::~Widget()
 
 void Widget::on_btnCalc_clicked()
 {
-    std::cout<<"clic";
 
 est->Set(ui);
 
 int cost=CalculationFacade::getCost(est);
 est->SetCost(ui,cost);
-  st->add(est);
+ Estate *newest= new Estate();
+ newest=est;
+  st->add(newest);
 
 
 }
@@ -41,6 +42,13 @@ void Widget::on_btnUndo_clicked()
 {
     QTextStream cout (stdout);
   bool b=st->hasStates();
-  cout<<b;
+  cout<<endl<<"hasstates"<<b<<endl;
+  if (b){
+
+  est=st->getActualData();
+est->TXT(ui);
+
+  }
+  return;
 
 }

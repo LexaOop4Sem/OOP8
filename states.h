@@ -12,6 +12,7 @@ public : explicit States(QObject* parent = nullptr);
     void undo();
 
     bool hasStates();
+    bool b=0;
 
   Estate *getActualData();
 
@@ -20,7 +21,7 @@ public : explicit States(QObject* parent = nullptr);
 private:
     QList<Estate*> array;
 
-    Estate* actualData=NULL;
+    Estate* actualData=nullptr;
 };
 
 #endif
