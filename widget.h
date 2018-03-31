@@ -32,8 +32,10 @@ public:
 
 
 private slots:
-    void on_btnCalc_clicked();
-    void on_btnUndo_clicked();
+    //void on_btnCalc_clicked();
+    //void on_btnUndo_clicked();
+    void btnUndoPressed();
+    void btnCalcPressed();
 };
 
 #endif // WIDGET_H

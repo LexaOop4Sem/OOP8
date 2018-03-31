@@ -56,6 +56,7 @@ array.append(preactualData);
 
 cout<<"value"<<preactualData->getresidents()<<endl;
 
+
 }
    preactualData=value;
 

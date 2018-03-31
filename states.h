@@ -12,7 +12,7 @@ public : explicit States(QObject* parent = nullptr);
     void undo();
 
     bool hasStates();
-    bool b=0;
+
 
   Estate *getActualData();
 

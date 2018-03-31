@@ -157,6 +157,9 @@
      <layout class="QGridLayout" name="gridLayout_4">
       <item row="0" column="1">
        <widget class="QPushButton" name="btnUndo">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
         <property name="text">
          <string>Последний запрос</string>
         </property>
