@@ -9,6 +9,7 @@
 #include "luxuriousapartmentcalc.h"
 #include "townhousecalc.h"
 #include "cottagecalc.h"
+#include "calcfactory.h"
 
 
 class CalculationFacade : public QObject

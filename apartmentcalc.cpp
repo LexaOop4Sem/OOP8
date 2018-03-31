@@ -1,6 +1,7 @@
 #include "apartmentcalc.h"
 
-
+class CalcFactory;
+class Estate;
 
 apartmentcalc::apartmentcalc()
 {

@@ -1,6 +1,7 @@
 #ifndef TOWNHOUSECALC_H
 #define TOWNHOUSECALC_H
 #include "estate.h"
+class Estate;
 
 class townhousecalc
 {

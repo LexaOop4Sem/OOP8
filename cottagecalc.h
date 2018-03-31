@@ -1,6 +1,7 @@
 #ifndef COTTAGECALC_H
 #define COTTAGECALC_H
 #include "estate.h"
+class Estate;
 
 class cottagecalc
 {

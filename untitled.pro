@@ -34,7 +34,9 @@ SOURCES += \
     apartmentcalc.cpp \
     luxuriousapartmentcalc.cpp \
     townhousecalc.cpp \
-    cottagecalc.cpp
+    cottagecalc.cpp \
+    calcfactory.cpp \
+    abstract.cpp
 
 HEADERS += \
         widget.h \
@@ -44,7 +46,9 @@ HEADERS += \
     apartmentcalc.h \
     luxuriousapartmentcalc.h \
     townhousecalc.h \
-    cottagecalc.h
+    cottagecalc.h \
+    calcfactory.h \
+    abstract.h
 
 FORMS += \
         widget.ui

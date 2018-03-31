@@ -1,13 +1,15 @@
 #ifndef APARTMENTCALC_H
 #define APARTMENTCALC_H
 #include "estate.h"
+#include "calcfactory.h"
 
+class CalcFactory;
 class Estate;
-class apartmentcalc
+class apartmentcalc:public CalcFactory
 {
 public:
     apartmentcalc();
-  static  int getCost(Estate *value);
+    virtual int getCost (Estate *value);
 };
 
 #endif // APARTMENTCALC_H
