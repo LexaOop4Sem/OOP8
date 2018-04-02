@@ -1,13 +1,14 @@
 #ifndef COTTAGECALC_H
 #define COTTAGECALC_H
 #include "estate.h"
-class Estate;
 
-class cottagecalc
+#include "abstract.h"
+
+class cottagecalc: public abstract
 {
 public:
     cottagecalc();
-    static  int getCost(Estate *value);
+    int getcost(Estate *value);
 };
 
 #endif // COTTAGECALC_H

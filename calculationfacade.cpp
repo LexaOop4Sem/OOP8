@@ -1,39 +1,22 @@
 #include "calculationfacade.h"
+#include "fabrica.h"
+#include "abstract.h"
 
 
+//class abstract
 CalculationFacade::CalculationFacade(QObject *parent) : QObject(parent)
 {
 
 }
 
 int CalculationFacade::getCost(Estate *value) {
-    int cost;
+    int cost=0;
 
-    switch (value->getType()) {
-    case Estate::EstateType::ECONOM:
+fabrica *ptr = new fabrica();
 
-      CalcFactory *fac= new apartmentcalc();
-        cost=fac->getCost(value);
+ cost=ptr->getcalc(value)->getcost(value);
 
-       // cost = apartmentcalc::getCost(value);
-        break;
 
-//    case Estate::EstateType::LUXURIOUS:
-//        cost = luxuriousapartmentcalc::getCost(value);
-//        break;
-
-//    case Estate::EstateType::TOWN_HOUSE:
-//        cost = townhousecalc::getCost(value);
-//        break;
-
-//    case Estate::EstateType::COTTAGE:
-//        cost = cottagecalc::getCost(value);
-//        break;
-
-//    default:
-//        cost = -1;
-//        break;
-    }
 
     return cost;
 }

@@ -4,7 +4,7 @@ townhousecalc::townhousecalc()
 {
 
 }
-int townhousecalc::getCost(Estate *value){
+int townhousecalc::getcost(Estate *value){
 
    int cost= value->getresidents()-10;
     return  cost;

@@ -35,7 +35,7 @@ SOURCES += \
     luxuriousapartmentcalc.cpp \
     townhousecalc.cpp \
     cottagecalc.cpp \
-    calcfactory.cpp \
+    fabrica.cpp \
     abstract.cpp
 
 HEADERS += \
@@ -47,7 +47,7 @@ HEADERS += \
     luxuriousapartmentcalc.h \
     townhousecalc.h \
     cottagecalc.h \
-    calcfactory.h \
+    fabrica.h \
     abstract.h
 
 FORMS += \

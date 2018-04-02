@@ -4,7 +4,7 @@ cottagecalc::cottagecalc()
 {
 
 }
-int cottagecalc::getCost(Estate *value){
+int cottagecalc::getcost(Estate *value){
 
    int cost= value->getresidents()-15;
     return  cost;

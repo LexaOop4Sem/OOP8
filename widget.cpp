@@ -1,9 +1,6 @@
 #include "widget.h"
-#include "ui_widget.h"
-#include <iostream>
-#include"estate.h"
-#include "states.h"
 #include <QTextStream>
+
 
 
 class Estate;

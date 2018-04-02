@@ -1,6 +1,6 @@
-//#include "abstract.h"
+#include "abstract.h"
 
-//abstract::abstract()
-//{
+abstract::abstract()
+{
 
-//}
+}

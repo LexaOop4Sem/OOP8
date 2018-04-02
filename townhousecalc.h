@@ -1,13 +1,14 @@
 #ifndef TOWNHOUSECALC_H
 #define TOWNHOUSECALC_H
 #include "estate.h"
-class Estate;
 
-class townhousecalc
+#include "abstract.h"
+
+class townhousecalc: public abstract
 {
 public:
     townhousecalc();
-     static  int getCost(Estate *value);
+     int getcost(Estate *value);
 };
 
 #endif // TOWNHOUSECALC_H

@@ -1,13 +1,34 @@
 #ifndef LUXURIOUSAPARTMENTCALC_H
 #define LUXURIOUSAPARTMENTCALC_H
-#include "estate.h"
-class Estate;
 
-class luxuriousapartmentcalc
-{
+//#include "abstract.h"
+
+
+class luxuriousapartmentcalc: public abstract {
 public:
     luxuriousapartmentcalc();
-     static  int getCost(Estate *value);
+
+    int getcost(Estate *value);
+
+    ~luxuriousapartmentcalc();
 };
 
 #endif // LUXURIOUSAPARTMENTCALC_H
+
+
+//#ifndef APARTMENTCALC_H
+//#define APARTMENTCALC_H
+
+//#include "abstract.h"
+
+
+//class apartmentcalc: public abstract
+
+//{
+//public:
+//    apartmentcalc();
+//    int getcost (Estate *value);
+//    ~apartmentcalc();
+//};
+
+//#endif // APARTMENTCALC_H
