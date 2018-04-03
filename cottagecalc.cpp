@@ -1,12 +1,12 @@
-#include "cottagecalc.h"
+//#include "cottagecalc.h"
 
-cottagecalc::cottagecalc()
-{
+//cottagecalc::cottagecalc()
+//{
 
-}
-int cottagecalc::getcost(Estate *value){
+//}
+//int cottagecalc::getCost(Estate *value){
 
-   int cost= value->getresidents()-15;
-    return  cost;
+//   int cost= value->getresidents()-15;
+//    return  cost;
 
-}
+//}

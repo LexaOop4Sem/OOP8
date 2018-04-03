@@ -1,16 +1,12 @@
 #include "apartmentcalc.h"
 
 
-//class CalcFactory;
-class Estate;
-
 apartmentcalc::apartmentcalc()
 {
 
 }
-int apartmentcalc::getcost(Estate *value){
+int apartmentcalc::getcost(int b){
 
-   int cost= value->getresidents()-1;
-    return  cost;
 
+    return 100;
 }

@@ -1,11 +1,11 @@
 #include "estate.h"
-#include <QString>
-#include "ui_widget.h"
-#include <iostream>
-#include <QWidget>
-#include <QTextStream>
-#include <QTextCodec>
-#include "calculationfacade.h"
+//#include <QString>
+//#include "ui_widget.h"
+//#include <iostream>
+//#include <QWidget>
+//#include <QTextStream>
+//#include <QTextCodec>
+//#include "calculationfacade.h"
 
 
 Estate::Estate()

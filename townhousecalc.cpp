@@ -1,12 +1,12 @@
-#include "townhousecalc.h"
+//#include "townhousecalc.h"
 
-townhousecalc::townhousecalc()
-{
+//townhousecalc::townhousecalc()
+//{
 
-}
-int townhousecalc::getcost(Estate *value){
+//}
+//int townhousecalc::getCost(Estate *value){
 
-   int cost= value->getresidents()-10;
-    return  cost;
+//   int cost= value->getresidents()-10;
+//    return  cost;
 
-}
+//}

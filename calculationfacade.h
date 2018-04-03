@@ -5,12 +5,8 @@
 
 #include <QObject>
 #include <estate.h>
-#include "apartmentcalc.h"
-#include "luxuriousapartmentcalc.h"
-#include "townhousecalc.h"
-#include "cottagecalc.h"
-#include "fabrica.h"
 
+class Estate;
 
 class CalculationFacade : public QObject
 {
@@ -18,6 +14,7 @@ class CalculationFacade : public QObject
 public:
     explicit CalculationFacade(QObject *parent = nullptr);
 
-    static int getCost(Estate *value); };
+    static int getc(Estate *value);
+};
 
 #endif // CALCULATIONFACADE_H

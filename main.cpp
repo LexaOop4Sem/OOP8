@@ -1,5 +1,4 @@
 #include "widget.h"
-#include "estate.h"
 #include <QApplication>
 #include <iostream>
 #include <QString>

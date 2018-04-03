@@ -31,24 +31,24 @@ SOURCES += \
     estate.cpp \
     states.cpp \
     calculationfacade.cpp \
-    apartmentcalc.cpp \
     luxuriousapartmentcalc.cpp \
     townhousecalc.cpp \
     cottagecalc.cpp \
-    fabrica.cpp \
-    abstract.cpp
+    abstract.cpp \
+    factory.cpp \
+    apartmentcalc.cpp
 
 HEADERS += \
         widget.h \
     estate.h \
     states.h \
     calculationfacade.h \
-    apartmentcalc.h \
     luxuriousapartmentcalc.h \
     townhousecalc.h \
     cottagecalc.h \
-    fabrica.h \
-    abstract.h
+    abstract.h \
+    factory.h \
+    apartmentcalc.h
 
 FORMS += \
         widget.ui

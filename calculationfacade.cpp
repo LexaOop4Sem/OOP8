@@ -1,20 +1,22 @@
 #include "calculationfacade.h"
-#include "fabrica.h"
+#include "factory.h"
 #include "abstract.h"
 
 
-//class abstract
+
+class AbstractCalc;
 CalculationFacade::CalculationFacade(QObject *parent) : QObject(parent)
 {
 
 }
 
-int CalculationFacade::getCost(Estate *value) {
+int CalculationFacade::getc(Estate *value) {
     int cost=0;
+int aa=1;
+int b=100;
+factory *ptr = new factory();
 
-fabrica *ptr = new fabrica();
-
- cost=ptr->getcalc(value)->getcost(value);
+ cost=ptr->getabs(aa)->getcost(b);
 
 
 

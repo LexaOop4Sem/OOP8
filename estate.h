@@ -4,6 +4,10 @@
  #include "ui_widget.h"
 #include <QObject>
 #include <QWidget>
+#include <QString>
+#include <iostream>
+#include <QTextStream>
+#include <QTextCodec>
 
 
 

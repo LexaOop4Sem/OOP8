@@ -1,14 +1,15 @@
-#ifndef TOWNHOUSECALC_H
-#define TOWNHOUSECALC_H
-#include "estate.h"
+//#ifndef TOWNHOUSECALC_H
+//#define TOWNHOUSECALC_H
 
-#include "abstract.h"
 
-class townhousecalc: public abstract
-{
-public:
-    townhousecalc();
-     int getcost(Estate *value);
-};
+//#include "abstract.h"
 
-#endif // TOWNHOUSECALC_H
+
+//class townhousecalc: public AbstractCalc
+//{
+//public:
+//    townhousecalc();
+//     int getCost(Estate *value);
+//};
+
+//#endif // TOWNHOUSECALC_H

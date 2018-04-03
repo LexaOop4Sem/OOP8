@@ -25,7 +25,7 @@ void Widget::btnCalcPressed(){
     Estate *newest= new Estate();
    newest->Set(ui);
 
-   int cost=CalculationFacade::getCost(newest);
+   int cost=CalculationFacade::getc(newest);
    newest->SetCost(ui,cost);
      st->add(newest);
 bool b=st->hasStates();
